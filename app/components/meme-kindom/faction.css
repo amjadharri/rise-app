@@ -1,0 +1,261 @@
+/* faction.css */
+
+/* Base styles */
+.faction-slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: visible;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  transform-origin: center center;
+  transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+  width: 250px;
+  height: 400px;
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    justify-content: center;
+    /* Center slides within the slider */
+    height: 320px;
+  }
+
+  .slide {
+    width: 220px;
+    height: 260px;
+  }
+
+  .active-slide {
+    width: 240px;
+    height: 280px;
+    transform: scale(1.15) translateX(50%) translateY(8%);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    justify-content: center;
+    /* Ensure it stays centered on smaller screens */
+    height: 250px;
+  }
+
+  .slide {
+    width: 180px;
+    height: 210px;
+  }
+
+  .active-slide {
+    width: 200px;
+    height: 240px;
+    transform: scale(1.1) translateX(40%) translateY(5%);
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    justify-content: center;
+    /* Maintain centering on mobile devices */
+    height: 200px;
+  }
+
+  .slide {
+    width: 140px;
+    height: 180px;
+  }
+
+  .active-slide {
+    width: 160px;
+    height: 200px;
+    transform: scale(1.05) translateX(30%) translateY(3%);
+  }
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Active slide style */
+.active-slide {
+  transform: scale(1.5) translateX(40%) translateY(-5%);
+  z-index: 6;
+  opacity: 1;
+  filter: brightness(1) blur(0);
+  width: 280px;
+  height: 350px;
+}
+
+.swiper-slide-inactive {
+  opacity: 0.7;
+  transform: scale(1.25);
+  filter: blur(1px) brightness(0.8);
+}
+
+/* Distance classes for neighboring slides */
+.distance-prev-1 {
+  transform: translateX(10%) translateY(-10%) scale(1.25) !important;
+  z-index: 5 !important;
+  filter: saturate(0) blur(4px);
+}
+
+.distance-next-1 {
+  transform: translateX(135%) translateY(-10%) scale(1.25) !important;
+  z-index: 5 !important;
+  filter: saturate(0) blur(4px);
+}
+
+.distance-prev-2 {
+  transform: translateX(30%) translateY(-40%) scale(1.05) !important;
+  z-index: 4 !important;
+  filter: saturate(0) blur(6px);
+}
+
+.distance-next-2 {
+  transform: translateX(130%) translateY(-40%) scale(1.05) !important;
+  z-index: 4 !important;
+  filter: saturate(0) blur(6px);
+}
+
+/* Ensure all items are showing */
+.distance-prev-1,
+.distance-next-1,
+.distance-prev-2,
+.distance-next-2 {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .slider {
+    height: 320px;
+  }
+
+  .slide {
+    width: 220px;
+    height: 260px;
+  }
+
+  .active-slide {
+    width: 240px;
+    height: 280px;
+    transform: scale(1.25) translateX(0%) translateY(8%);
+  }
+
+  .distance-prev-1 {
+    transform: translateX(-50%) translateY(0%) scale(1.1) !important;
+  }
+
+  .distance-next-1 {
+    transform: translateX(50%) translateY(0%) scale(1.1) !important;
+  }
+
+  .distance-prev-2 {
+    transform: translateX(-50%) translateY(-20%) scale(1.1) !important;
+  }
+
+  .distance-next-2 {
+    transform: translateX(50%) translateY(-20%) scale(1.1) !important;
+  }
+}
+
+/* Navigation buttons */
+.slider-button {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 15px;
+}
+
+.next-button {
+  right: 15px;
+}
+
+@media (max-width: 1030px) {
+  .slider-button {
+    font-size: 1.8rem;
+    /* Slightly smaller font size */
+  }
+
+  .prev-button {
+    left: 10px;
+    /* Move closer to the slider */
+  }
+
+  .next-button {
+    right: 10px;
+  }
+}
+
+/* Pagination Dots */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: -20px;
+  /* Adjust as needed to position below the slider */
+  left: 48%;
+  transform: translateX(-30%);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .dots-container {
+    left: 50%;
+  }
+}
+
+.dot {
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 32px;
+  background: linear-gradient(180deg, #e4d9bd 0%, #aa8246 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0.4;
+}
+
+.dot:hover,
+.dot.active {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .dots-container {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .dot {
+    font-size: 28px;
+    margin: 0 2px;
+  }
+}
