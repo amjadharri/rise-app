@@ -18,18 +18,18 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full h-auto 2xl:h-auto bg-cover bg-left bg-no-repeat lg:bg-[url('/assets/main-hero-image.webp')] ">
+    <div className="w-full h-auto 2xl:h-auto bg-cover bg-left bg-no-repeat lg:bg-[url('/assets/main-hero-image.webp')]">
       <div
         className="w-full h-full flex flex-col-reverse lg:flex-row bg-no-repeat bg-contain bg-[url('/assets/hero-image-mobile.png')] lg:bg-none"
         style={{
           backgroundPosition: "70% 100%",
         }}
       >
-        <div className="xl:w-3/4 md:h-full  ">
+        <div className="w-full xl:w-3/4 md:h-full md:mt-[12rem] sm:mt-0 lg:mt-0">
           <div className="w-full 2xl:px-16 lg:px-10 px-4 pb-12 lg:py-20">
             <h1
               data-aos="zoom-in"
-              className="text-gradient uppercase py-6 font-avon xl:w-4/5  2xl:w-3/4 w-full 2xl:text-7xl lg:px-4 xxl:text-[4rem] xl:text-6xl md:text-5xl text-[34px] lg:text-left text-center "
+              className="text-gradient uppercase font-avon xl:w-4/5  2xl:w-3/4 w-full 2xl:text-7xl lg:px-4 xxl:text-[4rem] xl:text-6xl md:text-5xl text-[34px] lg:text-left text-center "
               data-text="Build your Empire in the world of crypto legends"
               style={containerShadowStyle}
             >
@@ -63,15 +63,17 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="w-full 2xl:w-1/3 xl:w-2/5 h-full px-0 lg:pr-10 lg:pl-0 2xl:pl-4 overflow-x-hidden">
+        <div className="w-full 2xl:w-1/3 xl:w-2/5 h-full px-0 lg:pr-10 lg:pl-0 2xl:pl-4 overflow-x-hidden bg-no-repeat">
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
-            className="relative w-full h-[105vh] md:h-[150%] lg:h-[110vh] xl:h-[100vh] sm:h-[105vh] z-10 md:z-0 overflow-hidden bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('/assets/hero-form-bg.webp')",
-            }}
+            className="relative w-full h-full z-10 md:z-0 overflow-hidden"
           >
+            <img
+              src="/assets/hero-form-bg.webp"
+              alt="Background"
+              className="absolute top-0 left-0 w-full h-[110%] md:h-[150%] sm:h-[100vh] object-cover md:object-cover lg:object-cover"
+            />
             <HeroForm />
           </div>
         </div>
@@ -81,5 +83,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-

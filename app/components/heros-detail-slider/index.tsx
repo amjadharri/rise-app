@@ -59,7 +59,7 @@ const HeroDetails: React.FC = () => {
                     src={slide.imgSrc}
                     alt="Slide image"
                     layout="fill"
-                    className={`!hidden md:!block brightness-125 w-full h-full lg:rounded-2xl rounded-xl object-fill`}
+                    className={`!hidden md:!block brightness-125 w-full h-full md:object-cover lg:rounded-2xl rounded-xl object-fill`}
                     style={{
                       maskImage:
                         index % 2 === 0
