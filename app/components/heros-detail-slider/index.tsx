@@ -14,7 +14,7 @@ export function SampleNextArrow({ onClick }: ArrowProps) {
   return (
     <div
       onClick={onClick}
-      className="flex absolute xl:right-[4rem] right-4 lg:top-[45%] top-[30%] z-10 cursor-pointer"
+      className="flex absolute  xl:right-[3rem] lg:right-1 right-4 lg:top-[45%] md:top-[44%] top-[30%] z-10 cursor-pointer"
     >
       <RightArrow />
     </div>
@@ -25,7 +25,7 @@ export function SamplePrevArrow({ onClick }: ArrowProps) {
   return (
     <div
       onClick={onClick}
-      className="flex absolute xl:left-[4rem] left-4 lg:top-[45%] top-[30%] z-10 cursor-pointer"
+      className="flex absolute xl:left-[4rem] left-4 md:left-4 lg:left-1 lg:top-[45%] top-[30%] md:top-[44%]   z-10 cursor-pointer"
     >
       <LeftArrow />
     </div>
@@ -59,7 +59,7 @@ const HeroDetails: React.FC = () => {
                     src={slide.imgSrc}
                     alt="Slide image"
                     layout="fill"
-                    className={`!hidden md:!block brightness-125 w-full h-full md:object-cover lg:rounded-2xl rounded-xl object-fill`}
+                    className={`!hidden md:!block brightness-125 w-full h-full lg:rounded-2xl rounded-xl object-fill`}
                     style={{
                       maskImage:
                         index % 2 === 0

@@ -1,19 +1,19 @@
 import { StaticImageData } from "next/image"; // Import StaticImageData for typing image imports
-import h1 from "/public/assets/heros/1.1.png";
-import h2 from "/public/assets/heros/2.png";
-import h3 from "/public/assets/heros/3.png";
-import h4 from "/public/assets/heros/4.png";
-import h5 from "/public/assets/heros/5.png";
-import m1 from "/public/assets/heros/m1.png";
-import m2 from "/public/assets/heros/m2.png";
-import m3 from "/public/assets/heros/m3.png";
-import m4 from "/public/assets/heros/m4.png";
-import m5 from "/public/assets/heros/m5.png";
-import bg1 from "/public/assets/heros/bg1.png";
-import bg2 from "/public/assets/heros/bg2.png";
-import bg3 from "/public/assets/heros/bg3.png";
-import bg4 from "/public/assets/heros/bg4.png";
-import bg5 from "/public/assets/heros/bg5.png";
+import h1 from "/public/assets/heros/1.1.webp";
+import h2 from "/public/assets/heros/2.webp";
+import h3 from "/public/assets/heros/3.webp";
+import h4 from "/public/assets/heros/4.webp";
+import h5 from "/public/assets/heros/5.webp";
+import m1 from "/public/assets/heros/m1.webp";
+import m2 from "/public/assets/heros/m2.webp";
+import m3 from "/public/assets/heros/m3.webp";
+import m4 from "/public/assets/heros/m4.webp";
+import m5 from "/public/assets/heros/m5.webp";
+import bg1 from "/public/assets/heros/bg1.webp";
+import bg2 from "/public/assets/heros/bg2.webp";
+import bg3 from "/public/assets/heros/bg3.webp";
+import bg4 from "/public/assets/heros/bg4.webp";
+import bg5 from "/public/assets/heros/bg5.webp";
 // import { mx_hash_int_4 } from "three/src/nodes/materialx/lib/mx_noise.js";
 
 // Define the type for slider data

@@ -169,14 +169,14 @@ body {
 /* Add this to your CSS file */
 
 .bg-desktop {
-  background-image: url("/assets/heros/pvp-bg.png");
+  background-image: url("/assets/heros/pvp-bg.webp");
 }
 
 @media (max-width: 768px) {
 
   /* Adjust breakpoint as needed */
   .bg-desktop {
-    background-image: url("/assets/heros/pvp-mobile.png");
+    background-image: url("/assets/heros/pvp-mobile.webp");
   }
 }
 
@@ -185,4 +185,8 @@ body {
   text-shadow:
       0px 4px 8px #230203,
       0px 2px 4px #724A1D;
+}
+
+.canvas{
+  touch-action: auto !important;
 }

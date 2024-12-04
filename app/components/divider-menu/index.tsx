@@ -12,8 +12,24 @@ export default function DividerMenu() {
     "High-Quality Graphics",
   ];
 
-  const isSmallScreen =
-    typeof window !== "undefined" && window.innerWidth < 1024;
+  // Safe screen size check
+  const [isSmallScreen, setIsSmallScreen] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 1200);
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Add resize listener
+    window.addEventListener('resize', checkScreenSize);
+
+    // Cleanup listener
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   const repeatedItems = isSmallScreen
     ? [...menuItems, ...menuItems, ...menuItems]
     : menuItems;
@@ -37,10 +53,11 @@ export default function DividerMenu() {
                 </div>
                 {index % menuItems.length !== menuItems.length - 1 && (
                   <Image
-                    src={"/assets/divider-menu-image.svg"}
-                    alt=""
+                    src="/assets/divider-menu-image.svg"
+                    alt="Divider"
                     width={10}
                     height={10}
+                    className="inline-block"
                   />
                 )}
               </div>
@@ -64,8 +81,7 @@ export default function DividerMenu() {
           animation: scroll 20s linear infinite;
         }
 
-        /* Disable animation for larger screens */
-        @media (min-width: 1024px) {
+        @media (min-width: 1200px) {
           .animate-scroll {
             animation: none;
           }
