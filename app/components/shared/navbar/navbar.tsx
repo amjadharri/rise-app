@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-[#1a1408] border-b-[1px] shadow-lg border-[#E4D9BD] border-opacity-30 z-50 sticky top-0 lg:px-10 px-0">
+    <nav className="w-full bg-[#1a1408] border-b-[1px] shadow-lg border-[#E4D9BD] border-opacity-30 z-[99] sticky top-0 lg:px-10 px-0 ">
       <div className="w-full h-[70px] flex items-center">
         <div className="hidden lg:flex w-1/2 justify-end gap-10 xl:gap-16 xxl:gap-20 items-center pr-10 ">
           {leftLinks.map((link, index) => (
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="relative  flex justify-center items-center flex-grow ml-7 lg:ml-0">
           <div className="absolute bottom-[-30px] lg:bottom-[-70px] z-[-1] w-[180px] h-48 rounded-b-full bg-[#1a1408]" />
           <Image
-            src={"/logo.svg"}
+            src={"/logo.png"}
             alt="logo"
             width={150}
             height={150}

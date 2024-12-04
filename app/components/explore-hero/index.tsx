@@ -146,7 +146,7 @@ const ExploreHero: React.FC = () => {
                 {avatarTexts[selectedAvatar]}
               </h1>
             </div>
-            <div className="relative w-[100px] md:w-full flex items-center justify-start z-[-1]">
+            <div className="relative w-[100px] md:w-full flex items-center justify-start">
               <Image
                 src="/assets/explore-hero/left-object.png"
                 alt=""
@@ -154,7 +154,7 @@ const ExploreHero: React.FC = () => {
                 height={170}
                 className="z-10"
               />
-              <div className="absolute flex justify-center items-center right-[80%] md:right-[90%] z-[9999]">
+              <div className="absolute flex justify-center items-center right-[80%] md:right-[90%] z-[50]">
                 {avatars.map(({ src, alt, angle }) => (
                   <AvatarButton
                     key={alt}
