@@ -72,7 +72,7 @@ const HeroSection = () => {
             <img
               src="/assets/hero-form-bg.webp"
               alt="Background"
-              className="absolute top-0 left-0 w-full h-[110%] md:h-[150%] sm:h-[100vh] object-cover md:object-cover lg:object-cover"
+              className="absolute top-0 left-0 w-full h-[116%] md:h-[150%] sm:h-[100vh] object-cover md:object-cover lg:object-cover"
             />
             <HeroForm />
           </div>
