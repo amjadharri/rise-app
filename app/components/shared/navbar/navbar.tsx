@@ -26,13 +26,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-[#1a1408] border-b-[1px] shadow-lg border-[#E4D9BD] border-opacity-30 z-50 sticky top-0">
+    <nav className="w-full bg-[#1a1408] border-b-[1px] shadow-lg border-[#E4D9BD] border-opacity-30 z-50 sticky top-0 lg:px-10 px-0">
       <div className="w-full h-[70px] flex items-center">
         <div className="hidden lg:flex w-1/2 justify-end gap-10 xl:gap-16 xxl:gap-20 items-center pr-10 ">
           {leftLinks.map((link, index) => (
             <div
               key={index}
-              className="flex items-center justify-center gap-2 text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold"
+              className="flex items-center justify-center gap-2 whitespace-nowrap text-gradient hover:text-gray-200 hover:bg-gray-700 transition-all duration-300 cursor-pointer font-semibold"
             >
               {link.title}
             </div>

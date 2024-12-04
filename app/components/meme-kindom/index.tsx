@@ -23,7 +23,7 @@ export function NextArrow({ onClick }: ArrowProps) {
   return (
     <div
       onClick={onClick}
-      className="flex absolute lg:right-[1rem] right-4 lg:top-[35%] top-[40%] z-10 cursor-pointer"
+      className="flex absolute lg:right-[-3rem]  right-4 xl:right-0 lg:top-[35%] top-[40%] z-10 cursor-pointer"
     >
       <RightArrow />
     </div>
@@ -34,7 +34,7 @@ export function PrevArrow({ onClick }: ArrowProps) {
   return (
     <div
       onClick={onClick}
-      className="flex absolute lg:left-[1rem] left-4 lg:top-[35%] top-[40%] z-10 cursor-pointer"
+      className="flex absolute lg:left-[1rem] xl:right-0 left-4 lg:top-[35%] top-[40%] z-10 cursor-pointer"
     >
       <LeftArrow />
     </div>
@@ -130,7 +130,7 @@ const FactionSlider: React.FC = () => {
 
   return (
     <div
-      className="w-full xl:min-h-[70vh] pb-20 bg-opacity-10 bg-no-repeat bg-cover"
+      className="w-full lg:pb-0 pb-20 bg-opacity-10 bg-no-repeat bg-cover"
       style={{
         backgroundImage: "url('/assets/castle.svg')",
         // height: "100vh",

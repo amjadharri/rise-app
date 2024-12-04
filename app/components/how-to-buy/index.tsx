@@ -20,7 +20,7 @@ export default function HowToBuy() {
   ];
 
   return (
-    <div className="carousel-container py-20 px-4 sm:px-0">
+    <div className="carousel-container pt-20 lg:pb-48 pb-28 px-4 sm:px-0">
       <TitleHeading>HOW TO BUY</TitleHeading>
 
       <div className="w-full flex justify-center items-center relative">
@@ -51,8 +51,8 @@ export default function HowToBuy() {
               spaceBetween: 50,
             },
             640: {
-              slidesPerView: 1,
-              spaceBetween: 100,
+              slidesPerView: 2,
+              spaceBetween: 50,
             },
             768: {
               slidesPerView: 2,
