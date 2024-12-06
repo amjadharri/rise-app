@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image"; // Import StaticImageData for typi
 import h1 from "/public/assets/heros/doge.png";
 import h2 from "/public/assets/heros/cat.png";
 import h3 from "/public/assets/heros/pepe.jpg";
-import h4 from "/public/assets/heros/bull.png";
+import h4 from "/public/assets/heros/Bull.png";
 import h5 from "/public/assets/heros/bear.jpg";
 import m1 from "/public/assets/heros/doge_mobile.png";
 import m2 from "/public/assets/heros/cat_mobile.png";
