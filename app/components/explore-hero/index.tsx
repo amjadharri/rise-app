@@ -117,19 +117,6 @@ const ExploreHero: React.FC = () => {
     ) : null;
   };
 
-  // useEffect(() => {
-  //   const updateRadiusAndCamera = () => {
-  //     setRadius(window.innerWidth < 768 ? 90 : 150);
-  //     setCameraPosition(window.innerWidth < 768 ? [0, 20, 5] : [0, 50, 5]);
-  //   };
-  //   updateRadiusAndCamera();
-
-  //   const handleResize = () => setIsSmallScreen(window.innerWidth < 768);
-  //   window.addEventListener("resize", handleResize);
-  //   handleResize();
-  //   window.addEventListener("resize", updateRadiusAndCamera);
-  //   return () => window.removeEventListener("resize", updateRadiusAndCamera);
-  // }, []);
 
   return (
     <div className="py-10 overflow-hidden relative min-h-screen h-[100dvh] w-full lg:h-[120dvh] 2xl:h-[100dvh] dxl:h-[80dvh]">
