@@ -10,7 +10,7 @@ import HowToBuy from "./components/how-to-buy";
 import FactionSlider from "./components/meme-kindom";
 import Roadmap from "./components/roadmap";
 import Tokenmoics from "./components/tokenomics";
-import bg from "/public/assets/Tokenomics-bg.webp";
+import bg from "/public/assets/Tokenomicsbackground.png";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <FactionSlider />
       <BuildArmy />
       <div
-        className="bg-cover bg-center min-h-screen bg-no-repeat "
+        className="bg-cover bg-center min-h-screen bg-no-repeat"
         style={{ backgroundImage: `url(${bg.src})` }}
       >
         <Tokenmoics />
@@ -34,7 +34,7 @@ export default function Home() {
       <div
         className="relative bg-bottom bg-cover  bg-no-repeat"
         style={{
-          backgroundImage: "url('/assets/editionBg.webp')",
+          backgroundImage: "url('/assets/Tokenomicsbackground.png')",
         }}
       >
         <GameEditionsGrid />

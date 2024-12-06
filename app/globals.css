@@ -169,14 +169,14 @@ body {
 /* Add this to your CSS file */
 
 .bg-desktop {
-  background-image: url("/assets/heros/pvp-bg.webp");
+  background-image: url("/assets/heros/bullvsbear.png");
 }
 
 @media (max-width: 768px) {
 
   /* Adjust breakpoint as needed */
   .bg-desktop {
-    background-image: url("/assets/heros/pvp-mobile.webp");
+    background-image: url("/assets/heros/Bullvsbear_mobile.png");
   }
 }
 

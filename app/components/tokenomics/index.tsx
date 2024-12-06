@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../common/section";
 import Image from "next/image";
 import img from "/public/assets/tokenss.webp";
-import img2 from "/public/assets/shield02.svg";
+import img2 from "/public/assets/tokenomicsshield.png";
 
 const Tokenomics = () => {
   const points = [

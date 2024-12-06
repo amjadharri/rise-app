@@ -10,7 +10,7 @@ export default function Footer() {
     <footer>
       <div
         className="relative w-full xl:min-h-screen py-10 bg-opacity-10 bg-no-repeat bg-cover flex flex-col items-center justify-center"
-        style={{ backgroundImage: "url('/assets/footer-bg.webp')" }}
+        style={{ backgroundImage: "url('/assets/footerbackground.png')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#20150b] via-transparent to-[#20150b] opacity-80 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#20150b] via-transparent to-[#20150b] opacity-80 pointer-events-none"></div>
